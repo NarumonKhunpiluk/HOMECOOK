@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Basic -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Site Metas -->
+    <title>HOMECOOK</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- font Sriracha-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<style>
+    ul {
+        list-style-type: none;
+    }
+
+    li {
+        display: inline-block;
+    }
+
+    input[type="checkbox"][id^="myCheckbox"] {
+        display: none;
+    }
+
+    label {
+        border: 1px solid #fff;
+        padding: 10px;
+        display: block;
+        position: relative;
+        margin: 10px;
+        cursor: pointer;
+    }
+
+    label:before {
+        background-color: white;
+        color: white;
+        content: " ";
+        display: block;
+        border-radius: 50%;
+        border: 1px solid grey;
+        position: absolute;
+        top: -5px;
+        left: -5px;
+        width: 25px;
+        height: 25px;
+        text-align: center;
+        line-height: 28px;
+        transition-duration: 0.4s;
+        transform: scale(0);
+    }
+
+    label img {
+        height: 100px;
+        width: 100px;
+        transition-duration: 0.2s;
+        transform-origin: 50% 50%;
+    }
+
+    :checked+label {
+        border-color: #ddd;
+    }
+
+    :checked+label:before {
+        content: "✓";
+        background-color: grey;
+        transform: scale(1);
+    }
+
+    :checked+label img {
+        transform: scale(0.9);
+        /* box-shadow: 0 0 5px #333; */
+        z-index: -1;
+    }
+</style>
+
+<body style="font-family: 'Sriracha', cursive;">
+    <!-- Start Main Top -->
+    <header class="main-header">
+        <!-- Start Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-default bootsnav">
+            <div class="container">
+                <!-- Start Header Navigation -->
+                <div class="navbar-header">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu"
+                        aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="imgindex/logo.png" class="logo" alt=""
+                            style="width: 120px;"></a>
+                </div>
+                <!-- End Header Navigation -->
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="navbar-menu">
+                    <ul class="nav navbar-nav ml-auto" data-in="fadeInDown" data-out="fadeOutUp">
+                        <li class="nav-item active"><a class="nav-link" href="index.html">หน้าแรก</a></li>
+                        <li class="nav-item"><a class="nav-link" href="menu.html">เมนูความอร่อย</a></li>
+                        <li class="nav-item"><a class="nav-link" href="idea.html">เคล็ดลับความอร่อย</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contactus.html">ติดต่อเรา</a></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+        </nav>
+        <!-- End Navigation -->
+    </header>
+    <!-- End Main Top -->
+    
+    <!-- Start Top Search -->
+    <img src="imgindex/pp22.jpg" class="img-fluid"  alt="Responsive image">
+    
+   <div class="top-search">
+        <div class="container">
+            
+            <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                <input type="text" class="form-control" placeholder="Search">
+                <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
+            </div>
+        </div>
+    </div>
+    <!-- End Top Search -->
+    <br>
+    <br>
+    <br>
+    <div class="title-all text-center">
+        <h1>เมนูจากของในตู้เย็น</h1>
+    </div>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+
+                <img src="imgindex/tooyen2.png" alt="" style="width: 500px;">
+            </div>
+            <div class="col-md-6">
+                <br>
+                <br>
+                <h2>เลือกวัตถุดิบในตู้เย็น เพื่อค้นหาเมนูสุดพิเศษ</h2>
+                <br>
+                <h3>เนื้อสัตว์</h3>
+                <div class="card border-dark mb-3 ">
+                    <ul>
+                    
+                    <li >
+                        <input type="checkbox" id="myCheckbox1" />
+                        <label for="myCheckbox1"><img src="imgindex/pig.png" style="width: 60px; height: 60px;"/></label>
+                    </li>
+                    <li>
+    
+                        <input type="checkbox" id="myCheckbox2" />
+                        <label for="myCheckbox2"><img src="imgindex/kai.png" style="width: 60px; height: 60px;"/></label>
+                    </li>
+                    <li>
+    
+                        <input type="checkbox" id="myCheckbox3" />
+                        <label for="myCheckbox3"><img src="imgindex/cow.png" style="width: 60px; height: 60px;"/></label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="myCheckbox4" />
+                        <label for="myCheckbox4"><img src="imgindex/duck.png" style="width: 60px; height: 60px;"/></label>
+                    </li>
+                    <li>
+    
+                        <input type="checkbox" id="myCheckbox5" />
+                        <label for="myCheckbox5"><img src="imgindex/fish.png" style="width: 60px; height: 60px;"/></label>
+                    </li>
+                    <li>
+    
+                        <input type="checkbox" id="myCheckbox6" />
+                        <label for="myCheckbox6"><img src="imgindex/squid.png" style="width: 60px; height: 60px;"/></label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="myCheckbox7" />
+                        <label for="myCheckbox7"><img src="imgindex/shrimp.png" style="width: 60px; height: 60px;"/></label>
+                    </li>
+                    <li>
+    
+                        <input type="checkbox" id="myCheckbox8" />
+                        <label for="myCheckbox8"><img src="imgindex/egg.png" style="width: 60px; height: 60px;"/></label>
+                    </li>
+                    <li>
+    
+                        <input type="checkbox" id="myCheckbox9" />
+                        <label for="myCheckbox9"><img src="imgindex/crab.png" style="width: 60px; height: 60px;"/></label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="myCheckbox10" />
+                        <label for="myCheckbox10"><img src="imgindex/shell.png" style="width: 60px; height: 60px;"/></label>
+                    </li>
+                </ul>
+            </div>
+                <br>
+                <h3>ผัก</h3>
+                <div class="card border-dark mb-3 ">
+                <ul>
+                    <li >
+                        <input type="checkbox" id="myCheckbox11" />
+                        <label for="myCheckbox11"><img src="imgindex/cabbage.png" style="width: 60px; height: 60px;"/></label>
+                    </li>
+                    <li>
+    
+                        <input type="checkbox" id="myCheckbox12" />
+                        <label for="myCheckbox12"><img src="imgindex/carrot.png" style="width: 60px; height: 60px;"/></label>
+                    </li>
+                    <li>
+    
+                        <input type="checkbox" id="myCheckbox13" />
+                        <label for="myCheckbox13"><img src="imgindex/chili.png" style="width: 60px; height: 60px;"/></label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="myCheckbox14" />
+                        <label for="myCheckbox14"><img src="imgindex/cucumber.png" style="width: 60px; height: 60px;"/></label>
+                    </li>
+                    <li>
+    
+                        <input type="checkbox" id="myCheckbox15" />
+                        <label for="myCheckbox15"><img src="imgindex/eggplant.png" style="width: 60px; height: 60px;"/></label>
+                    </li>
+                    <li>
+    
+                        <input type="checkbox" id="myCheckbox16" />
+                        <label for="myCheckbox16"><img src="imgindex/lemongrass.png" style="width: 60px; height: 60px;"/></label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="myCheckbox17" />
+                        <label for="myCheckbox17"><img src="imgindex/onion.png" style="width: 60px; height: 60px;"/></label>
+                    </li>
+                </ul>
+            </div>
+                <div class="title-all text-center">
+                    <a href="menuindex.html">
+                    <button type="button" class="btn btn-dark">ค้นหาเลย !</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+       
+        
+
+    </div>
+    <!-- Start Categories  -->
+    
+    <div class="categories-shop" >
+        <div class="container " >
+            <div class="row">
+                <div class="col-lg-12">
+                    <br>
+                    <div class="title-all text-center">
+                        <h1>วันนี้ทานอะไรดี ?</h1>
+                        <br>
+                        <h2 class="text-secondary">ให้เราช่วยคุณสิ</h2>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="shop-cat-box" >
+                        <img class="img-fluid" src="imgindex/samdon8.jpg" style=" height: 200px;"  alt="" />
+                        <a class="btn hvr-hover" href="#">เมนูมังปังปุริเย่</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="shop-cat-box" >
+                        <img class="img-fluid" src="imgindex/samdon5.jpg"   alt="" />
+                        <a class="btn hvr-hover" href="#">กินอาหารตามกรุ็ปเลือด</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="shop-cat-box" >
+                        <img class="img-fluid" src="imgindex/samdon7.jpg"  alt="" />
+                        <a class="btn hvr-hover" href="#">รวมเมนูอาหารคลีน</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Categories -->
+    <br>
+                    <div class="title-all text-center">
+                        <h1>เมนูอาหารง่ายๆ</h1>
+                        <br>
+                        <h2 class="text-secondary">สามารถทำได้เองง่ายๆที่บ้าน</h2>
+                        
+                    </div>
+    <div class="box-add-products " style="background-color: #d9dca5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="offer-box-products">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/OEzYhWT4D2c" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="offer-box-products">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ux9wh2n3wqE" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Start Products  -->
+    <div class="products-box">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="title-all text-center">
+                        <h1>เมนูอาหาร4ภาค</h1>
+                        <p>รวบรวมเมนูอาหารทั้ง 4 ภาคของไทยและขั้นตอนในการทำอาหาร</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="special-menu text-center">
+                        <div class="button-group filter-button-group">
+                            
+                            <button data-filter=".top-featured">ภาคเหนือ </button>
+                            <button data-filter=".pak-kan">ภาคกลาง</button>
+                            <button data-filter=".bat">ภาคอีสาน</button>
+                            <button data-filter=".best-seller">ภาคใต้</button>
+                           
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row special-list">
+                <div class="col-lg-3 col-md-6 special-grid best-seller">
+                    <div class="products-single fix">
+                        <a class="cart" href="#">
+                        <div class="box-img-hover">
+                            <div class="offer-box-products">
+                            <img src="imgsepak/tai1.jpg" class="img-fluid" alt="Image">
+                        </div>
+    
+                        </div>
+                        <div class="why-text">
+                            <h4>สะตอผัดกะปิกุ้งสด</h4>
+                           
+                        </div>
+                    </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 special-grid best-seller">
+                    <div class="products-single fix">
+                        <a class="cart" href="#">
+                        <div class="box-img-hover">
+                            <div class="offer-box-products">
+                            <img src="imgsepak/tai2.jpg" class="img-fluid" alt="Image">
+                        </div>
+    
+                        </div>
+                        <div class="why-text">
+                            <h4>แกงเหลือง</h4>
+                           
+                        </div>
+                    </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 special-grid best-seller">
+                    <div class="products-single fix">
+                        <a class="cart" href="#">
+                        <div class="box-img-hover">
+                            <div class="offer-box-products">
+                            <img src="imgsepak/tai3.jpg" class="img-fluid" alt="Image">
+                        </div>
+    
+                        </div>
+                        <div class="why-text">
+                            <h4>ผักเหลียงผัดไข่</h4>
+                            
+                        </div>
+                    </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 special-grid best-seller">
+                    <div class="products-single fix">
+                        <a class="cart" href="#">
+                        <div class="box-img-hover">
+                            <div class="offer-box-products">
+                            <img src="imgsepak/tai4.jpg" class="img-fluid" alt="Image">
+                        </div>
+    
+                        </div>
+                        <div class="why-text">
+                            <h4>แกงไตปลา</h4>
+                          
+                        </div>
+                    </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 special-grid pak-kan">
+                    <div class="products-single fix">
+                        <a class="cart" href="#">
+                        <div class="box-img-hover">
+                            <div class="offer-box-products">
+                            <img src="imgsepak/kan1.jpg"  class="img-fluid"  alt="Image">
+                        </div>
+    
+                        </div>
+                        <div class="why-text">
+                            <h4>แกงส้มกุ้ง ไข่เจียวชะอม</h4>
+                           
+                        </div>
+                    </a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 special-grid pak-kan">
+                    <div class="products-single fix">
+                        <a class="cart" href="#">
+                        <div class="box-img-hover">
+                            <div class="offer-box-products">
+                            <img src="imgsepak/kan3.jpg" class="img-fluid" alt="Image">
+                        </div>
+    
+                        </div>
+                        <div class="why-text">
+                            <h4>ผัดเผ็ดไข่ไก่อ่อน</h4>
+                           
+                        </div>
+                    </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 special-grid pak-kan">
+                    <div class="products-single fix">
+                        <a class="cart" href="#">
+                        <div class="box-img-hover">
+                            <div class="offer-box-products">
+                            <img src="imgsepak/kan6.jpg" class="img-fluid" alt="Image">
+                        </div>
+    
+                        </div>
+                        <div class="why-text">
+                            <h4>พะแนงเนื้อ</h4>
+                           
+                        </div>
+                    </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 special-grid pak-kan">
+                    <div class="products-single fix">
+                        <a class="cart" href="#">
+                        <div class="box-img-hover">
+                            <div class="offer-box-products">
+                            <img src="imgsepak/kan4.jpg" class="img-fluid" style="width: 500px;height: 190px;" alt="Image">
+                        </div>
+    
+                        </div>
+                        <div class="why-text">
+                            <h4>ต้มยำทะเลน้ำใส</h4>
+                            
+                        </div>
+                    </a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 special-grid top-featured">
+                    <div class="products-single fix">
+                        <a class="cart" href="#">
+                        <div class="box-img-hover">
+                            <div class="offer-box-products">
+                            <img src="imgsepak/nan1.jpg" class="img-fluid" alt="Image">
+                            
+                        </div>
+                        </div>
+                        <div class="why-text">
+                            <h4>ข้าวซอยไก่</h4>
+                            
+                        </div>
+                    </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 special-grid top-featured">
+                    <div class="products-single fix">
+                        <a class="cart" href="#">
+                        <div class="box-img-hover">
+                            <div class="offer-box-products">
+                            <img src="imgsepak/nan2.jpg" class="img-fluid" alt="Image">
+                        </div>
+                            
+                        </div>
+                        <div class="why-text">
+                            <h4>แกงหัวปลีกับหมู </h4>
+                           
+                        </div>
+                    </a>
+                    </div>
+                </div> 
+                <div class="col-lg-3 col-md-6 special-grid top-featured">
+                    <div class="products-single fix">
+                        <a class="cart" href="#">
+                        <div class="box-img-hover">
+                            <div class="offer-box-products">
+                            <img src="imgsepak/nan4.jpg" class="img-fluid" alt="Image">
+                            </div>
+                        </div>
+                        <div class="why-text">
+                            <h4>ต้มยำปลาช่อน </h4>
+                            
+                        </div>
+                    </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 special-grid top-featured">
+                    <div class="products-single fix">
+                        <a class="cart" href="#">
+                        <div class="box-img-hover">
+                            <div class="offer-box-products">
+                            <img src="imgsepak/nan3.jpg" class="img-fluid" alt="Image">
+                        </div>
+                            
+                        </div>
+                        <div class="why-text">
+                            
+                            <h4>แกงอ่อมซี่โครงหมู</h4>
+                           
+                        </div>
+                    </a>
+                    </div>
+                </div>
+               
+                
+
+                
+                <div class="col-lg-3 col-md-6 special-grid bat">
+                    <div class="products-single fix">
+                        <a class="cart" href="#">
+                        <div class="box-img-hover">
+                            <div class="offer-box-products">
+                            <img src="imgsepak/esan2.jpg" class="img-fluid" alt="Image">
+                        </div>
+                            
+                        </div>
+                        <div class="why-text">
+                            <h4>ลาบปลานิลทอด</h4>
+                           
+                        </div>
+                    </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 special-grid bat">
+                    <div class="products-single fix">
+                        <a class="cart" href="#">
+                        <div class="box-img-hover">
+                            <div class="offer-box-products">
+                            <img src="imgsepak/esan3.jpg" class="img-fluid" alt="Image">
+                        </div>
+                            
+                        </div>
+                        <div class="why-text">
+                            <h4>ลาบเป็ด</h4>
+                            
+                        </div>
+                    </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 special-grid bat">
+                    <div class="products-single fix">
+                        <a class="cart" href="#">
+                        <div class="box-img-hover">
+                            <div class="offer-box-products">
+                            <img src="imgsepak/esan6.jpg" class="img-fluid" style="width: 300px;height: 170px;" alt="Image">
+                            </div>
+                        </div>
+                        <div class="why-text">
+                            <h4>ซุปมะเขือเปราะ</h4>
+                            
+                        </div>
+                    </a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 special-grid bat">
+                    <div class="products-single fix">
+                        <a class="cart" href="#">
+                        <div class="box-img-hover">
+                            <div class="offer-box-products">
+                            <img src="imgsepak/esan4.jpg" class="img-fluid" alt="Image">
+                        </div>
+                            
+                            
+                        </div>
+                        <div class="why-text">
+                            <h4>ส้มตำหมูยอ</h4>
+                            
+                        </div>
+                    </a>
+                    </div>
+                </div>
+                
+                
+                
+            </div>
+        </div>
+    </div>
+    <!-- End Products  -->
+
+    
+    <!-- End Blog  -->
+
+
+    
+
+    <!-- footer -->
+    <section id="footer" style="background-color: #d9dca5">
+        <div class="container">
+            <br>
+            <div class="row text-center text-xs-center text-sm-left text-md-left">
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <div class="title-all text-center">
+                    <h2></h2>
+                    <ul class="list-unstyled quick-links">
+                        <li><a href="index.html"><i
+                                    class="fa fa-angle-double-right"></i>หน้าแรก</a></li>
+                                    <br>
+                        <li><a href="menu.html"><i
+                                    class="fa fa-angle-double-right"></i>เมนูความอร่อย</a></li>
+                                    <br>
+                        <li><a href="idea.html"><i
+                                    class="fa fa-angle-double-right"></i>เคล็ดลับความอร่อย</a></li>
+                                    <br>
+                        <li><a href="contactus.html"><i
+                                    class="fa fa-angle-double-right"></i>ติดต่อเรา</a></li>
+                    </ul></div>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <div class="title-all text-center">
+                    <h2>ช่องทางการติดต่อ</h2>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+                        <div class="footer-top-box">
+                            <ul>
+                                <div class="special-menu text-center ">
+                                    <li><a href="#"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-google-plus" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-pinterest-p" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-whatsapp" aria-hidden="true"></i></a></li>
+                                </div>
+                            </ul>
+    
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <div class="title-all text-center">
+                    <h2></h2>
+                    <ul class="list-unstyled quick-links">
+                        <li><a href=""><i
+                                    class="fa fa-angle-double-right"></i>คำถามที่พบบ่อย</a></li>
+                                    <br>
+                        <li><a href=""><i
+                                    class="fa fa-angle-double-right"></i>แนะนำการใช้งานเว็บไซต์</a></li>
+    
+                    </ul></div>
+    
+                </div>
+                
+            </div>
+        </div>
+        <div class="row">
+    
+    
+            <hr>
+    
+        </div>
+        </div>
+        <div>
+    </section>
+    <!-- footer -->
+    <!-- Start copyright  -->
+    <div class="footer-copyright">
+        <p class="footer-company">All Rights Reserved. &copy; 2020 <a href="#">HomeCook</a> Design By :
+            <a href="#">Home Cook Team</a></p>
+    </div>
+    <!-- End copyright  -->
+
+    <!-- ALL JS FILES -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/jquery.superslides.min.js"></script>
+    <script src="js/bootstrap-select.js"></script>
+    <script src="js/inewsticker.js"></script>
+    <script src="js/bootsnav.js."></script>
+    <script src="js/images-loded.min.js"></script>
+    <script src="js/isotope.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/baguetteBox.min.js"></script>
+    <script src="js/form-validator.min.js"></script>
+    <script src="js/contact-form-script.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
